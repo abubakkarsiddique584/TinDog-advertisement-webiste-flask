@@ -1,0 +1,93 @@
+/* Full-screen section */
+    #title {
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: linear-gradient(to right, #ff5f6d, #ffc371); /* Your gradient */
+    }
+
+    .title-text {
+      color: white;
+      padding-left: 5%; /* Spacing from the left */
+    }
+
+    /* Image styles for iPhone */
+    .title-img {
+      max-width: 40%; /* 40% of the width for the phone image */
+      height: auto;
+      padding-right: 5%; /* Spacing from the right */
+    }
+
+    /* Button styles for consistency */
+    .custom-buttons {
+      margin-top: 20px;
+    }
+
+#features .icon-square {
+     width: 48px;
+     height: 48px;
+}
+
+.icon-square svg {
+  width: 24px;
+  height: 24px;
+}
+
+#features .fs-4 {
+  font-size: 1.25rem;
+}
+
+#features .bg-success {
+  background-color: #28a745 !important; /* Green */
+}
+
+#features .bg-primary {
+  background-color: #007bff !important; /* Blue */
+}
+
+#features .bg-warning {
+  background-color: #ffc107 !important; /* Yellow */
+}
+
+.pt-5 {
+  padding-top: 3rem !important; /* margin-top 5 as in the image */
+}
+#footer-section {
+  background: linear-gradient(to right, #ff5f6d, #ffc371); /* Your gradient */
+  margin-bottom: 0;  /* Remove bottom margin */
+  padding: 20px; /* Add padding for breathing space */
+  display: flex;
+  flex-wrap: wrap; /* Flex layout with wrap to adjust on smaller screens */
+  justify-content: space-between; /* Spacing between columns */
+  align-items: flex-start;
+}
+
+/* Remove padding from the container on the sides */
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* Styling for the columns on small screens */
+@media (max-width: 768px) {
+  #footer-section {
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .col {
+    margin-bottom: 20px;
+  }
+}
+
+/* Media Query for very large screens */
+@media (min-width: 1200px) {
+  #footer-section {
+    padding: 40px; /* Larger padding on big screens */
+  }
+}
+
